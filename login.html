@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Login</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                <div class="log">
+                    <img src="./logo.jpj-removebg-preview.png" width="250px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="./Home.html" target="_blank">Home</a></li>
+                        <li><a href="./Products.html" target="_blank">Products</a></li>
+                        <li><a href="./buy.html" target="_blank">Buy</a></li>
+                        <li><a href="./login.html" target="_blank">Countact</a></li>
+                        <li><a href="">Account</a></li>
+
+                    </ul>
+                </nav>
+                <img id="icon" src="./icon-removebg-preview.png" width="50px" height="100px">
+            </div>
+        </div>
+    </div>
+    <div class="account-page">
+        <div class="container">
+            <div class="col_2">
+                <div class="form-container">
+                    <div class="form-btn">
+                        <span onclick="login()">Login</span>
+                        <span onclick="register()">Register</span>
+                        <hr id="indicator">
+                    </div>
+                    <form id="loginform">
+                        <input type="text" placeholder="Username">
+                        <input type="password" placeholder="Password">
+                        <button type="submit" class="btn"> Login</button>
+                        <a href=""> Forgot password</a>
+                    </form>
+                    <form id="registerform">
+                        <input type="text" placeholder="Username">
+                        <input type="email" placeholder="Email">
+                        <button type="submit" class="btn"> Register</button>
+                        <a href=""> Forgot password</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+                <!-- footer -->
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="footer-col_1">
+                                <h3> Download our APP</h3>
+                                <P>Download APP for Android and ios mobile phone </P>
+                                <div class="app_logo">
+                                    <img src="./play-store.png" class="footer_1">
+                                    <img src="./app-store.png" class="footer_1">
+
+                                </div>
+                            </div>
+                            <div class="footer-col_3">
+                                <h3 > Useful Links</h3>
+                                <ul>
+                                    <li class="footer_1">
+                                        Coupons
+                                    </li>
+                                    <li class="footer_1">Blog Post</li>
+                                    <li class="footer_1">
+                                        Return Policy
+                                    </li>
+                                    <li class="footer_1">Join Affiliate</li>
+                                </ul>
+                            </div>
+                            <div class="footer-col_4">
+                                <h3>Follow Us</h3>
+                                <ul>
+                                    <li class="footer_1">
+                                        Facebook
+                                    </li>
+                                    <li class="footer_1">Twitter</li>
+                                    <li class="footer_1">
+                                        Instgram
+                                    </li>
+                                    <li class="footer_1">YouTube</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="Copyright"> Copyright 2021 - Fatma Yahya & Alaa Alsayed </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var loginform = document.getElementById("loginform")
+        var registerform = document.getElementById("registerform")
+        var indicator = document.getElementById("indicator");
+
+        function register() {
+            registerform.style.transform = "translateX(0px)";
+            loginform.style.transform = "translateX(0px)";
+            indicator.style.transform = "translateX(100px)";
+
+        }
+
+        function login() {
+            registerform.style.transform = "translateX(300px)";
+            loginform.style.transform = "translateX(300px)";
+            indicator.style.transform = "translateX(0px)";
+
+
+        }
+    </script>
+</body>
+
+</html>
